@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create Report</ion-title>
+    <ion-back-button defaultHref="home"></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Child name</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">ID</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+<ion-item>
+<div class="grid-item">
+  <h2>Time and date</h2>
+  <ion-datetime show-clear-button="true"></ion-datetime>
+</div>
+</ion-item>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label>skin color</ion-label>
+    <ion-select value="black">
+      <ion-select-option value="blac">black</ion-select-option>
+      <ion-select-option value="white">white</ion-select-option>
+      <ion-select-option value="x">white</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>eyes color</ion-label>
+    <ion-select value="Black">
+      <ion-select-option value="blac">black</ion-select-option>
+      <ion-select-option value="white">brown</ion-select-option>
+      <ion-select-option value="x">green</ion-select-option>
+      <ion-select-option value="x">blue</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-select value="Femle">
+      <ion-select-option value="blac">Female</ion-select-option>
+      <ion-select-option value="white">Male</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+<ion-item>
+  <ion-label position="floating">More information</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+</ion-list>
+
+<ion-item>
+  <div #map id="map"> Location</div>
+</ion-item>
+
+<ion-item>
+<img src="{{imgURL}}" height="200" width="200">
+<ion-button (click)="getCamera()">Take photo</ion-button>
+</ion-item>
+
+<div class="ion-padding">
+  <ion-button expand="block" (click)="Done()">Send Report</ion-button>
+</div>
+
+</ion-content>

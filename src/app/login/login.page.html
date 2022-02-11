@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">you ID <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+  </ion-item>
+<ion-item>
+    <ion-label>your Password</ion-label>
+    <ion-input  type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <a [routerLink]="['/changepass']">forget my password</a>
+  </ion-item>
+  
+  <div class="ion-padding">
+    <ion-button >Login </ion-button>
+  </div>
+
+  <div class="ion-padding">
+    <ion-button (click)="goTosingup()">sing up </ion-button>
+  </div>
+
+</ion-content>

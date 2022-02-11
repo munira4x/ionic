@@ -1,0 +1,82 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Setting
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="childlist"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-item-divider>
+    <ion-label>Account setting</ion-label>
+  </ion-item-divider>
+  <ion-item>
+
+    <ion-label>My account</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <!-- <ion-label>My Kids</ion-label> -->
+    <ion-item button (click)="mykids()">My kids</ion-item>
+  </ion-item>
+
+  <ion-item>
+    <ion-router-link defaultHref="report">My Report</ion-router-link>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Chane password</ion-label>
+  </ion-item>
+
+
+  <ion-item-divider>
+    <ion-label >About App</ion-label>
+  </ion-item-divider>
+
+  <ion-item>
+    <ion-label>FAQs</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Safty informations</ion-label>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label defaultHref="about">about us</ion-label>
+  </ion-item>
+
+</ion-content>
+
+<ion-tabs>
+
+
+
+  <ion-tab-bar slot="bottom">
+<ion-tab-button>
+  <ion-icon name="home"></ion-icon>
+  <ion-label>Home</ion-label>
+</ion-tab-button>
+
+<ion-tab-button>
+  <ion-icon name="person"></ion-icon>
+  <ion-label>Account</ion-label>
+</ion-tab-button>
+
+<ion-tab-button>
+  <ion-icon name="add"></ion-icon>
+  <ion-label>Report</ion-label>
+</ion-tab-button>
+
+<ion-tab-button>
+  <ion-icon name="checkmark"></ion-icon>
+  <ion-label>found</ion-label>
+</ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
+

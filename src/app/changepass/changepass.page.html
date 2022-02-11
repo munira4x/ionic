@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>change password</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="stacked">New password <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+  </ion-item>
+<ion-item>
+    <ion-label>confirom Password</ion-label>
+    <ion-input  type="password"></ion-input>
+  </ion-item>
+
+  <div class="ion-padding">
+    <ion-button  (click)="change()">change </ion-button>
+  </div>
+
+</ion-content>
